@@ -2,11 +2,10 @@
 const element = document.getElementById("level");
 
 ley level = 0;
-let current = element;
 
-while(current.parentElement){
+while(element){
 	level++;
-	current = current.parentElement;
+	element = element.parentElement;
 }
 
-alert(`The level of the element is: ${level}`);
+alert("The level of the element is: " + level);
